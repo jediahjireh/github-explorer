@@ -1,0 +1,144 @@
+/* src/styles/custom.css */
+
+/* body styling */
+body {
+  /* remove default margin */
+  margin: 0;
+  /* use flexbox for layout */
+  display: flex;
+  /* align items vertically in the center */
+  align-items: center;
+  /* align items horizontally in the center */
+  justify-content: center;
+  /* set minimum width */
+  min-width: 320px;
+  /* set minimum height to fill viewport height */
+  min-height: 100vh;
+  /* add padding around the body */
+  padding: 20px;
+  /* set background colour for light mode */
+  background-color: #f4f4f4;
+  /* set text colour for light mode */
+  color: #333;
+  /* center items within flex container */
+  place-items: center;
+}
+
+/* section styling for user details, repo details and GitHub search */
+#user-details,
+#repo-details,
+#github-search {
+  /* ensure consistent width */
+  width: 100%;
+  /* center content horizontally */
+  margin: 0 auto;
+  /* add consistent padding */
+  padding: 20px;
+}
+
+/* search container styling */
+.search-container {
+  /* use flexbox for horizontal alignment */
+  display: flex;
+  /* add space between input and button */
+  gap: 10px;
+}
+
+/* search box styling */
+#search-box {
+  /* allow input to take available space */
+  flex: 1;
+  /* round corners of input */
+  border-radius: 5px;
+  /* add consistent padding */
+  padding: 0.5em;
+}
+
+/* search button styling */
+#search-button {
+  /* allow button to take available space */
+  flex: 1;
+  /* round corners of button */
+  border-radius: 5px;
+  /* add consistent padding */
+  padding: 0.5em 1em;
+}
+
+/* custom styling for repo and commit list */
+#repo-list,
+#commit-list {
+  /* remove default padding */
+  padding: 0;
+}
+
+/* repo list item styling */
+#repo-list li {
+  /* remove default list style */
+  list-style: none;
+  /* remove left margin */
+  margin-left: 0;
+  /* add space below list items */
+  margin-bottom: 10px;
+}
+
+/* results list and repo list button styling */
+#results-list,
+#repo-list button {
+  /* add space below elements */
+  margin-bottom: 10px;
+  /* ensure elements take full width */
+  width: 100%;
+}
+
+/* commit list container styling */
+#commit-list ul {
+  /* center text within list */
+  text-align: center;
+}
+
+/* commit table styling */
+#commit-table {
+  /* ensure table takes full width */
+  width: 100%;
+  /* collapse borders into a single border */
+  border-collapse: collapse;
+}
+
+/* commit table header and cell styling */
+#commit-table th,
+#commit-table td {
+  /* add border to table cells */
+  border: 1px solid #ddd;
+  /* add padding to table cells */
+  padding: 8px;
+}
+
+/* alternate row background colour for commit table */
+#commit-table tr:nth-child(even) {
+  /* set background colour for even rows */
+  background-color: #f0f0f0;
+}
+
+/* dark mode alternate row background colour for commit table */
+.dark-mode #commit-table tr:nth-child(even) {
+  /* set background colour for even rows in dark mode */
+  background-color: #4d4d4d;
+}
+
+/* commit table row hover styling */
+#commit-table tr:hover {
+  /* set background colour on hover */
+  background-color: #e0e0e0;
+}
+
+/* dark mode commit table row hover styling */
+.dark-mode #commit-table tr:hover {
+  /* set background colour on hover in dark mode */
+  background-color: #636363;
+}
+
+/* commit list container styling */
+#commit-list-container {
+  /* add space above container */
+  margin-top: 20px;
+}

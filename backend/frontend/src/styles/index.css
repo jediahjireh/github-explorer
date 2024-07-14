@@ -1,0 +1,162 @@
+/* src/styles/index.css */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  /* enable light and dark colour schemes */
+  color-scheme: light dark;
+}
+
+/* body styling */
+body {
+  margin: 0 auto;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  /* light mode text colour */
+  color: #213547;
+  /* light mode background */
+  background-color: #ffffff;
+}
+
+/* consistent box sizing */
+* {
+  /* include padding and border */
+  box-sizing: border-box;
+}
+
+/* link styling */
+a {
+  font-weight: 600;
+  /* default link colour */
+  color: #007acc;
+  /* remove underline */
+  text-decoration: none;
+}
+
+/* hover link colour */
+a:hover {
+  color: #005999;
+}
+
+/* dark mode link styling */
+.dark-mode a {
+  color: #9ecfff;
+}
+
+/* dark mode hover link */
+.dark-mode a:hover {
+  color: #74b3e0;
+}
+
+/* button and input styling */
+button,
+input {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* dark mode styles */
+.dark-mode {
+  color: #FFFFFFDE;
+  background-color: #242424;
+}
+
+.dark-mode button,
+.dark-mode input {
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid #444;
+  width: 100%;
+}
+
+/* theme toggle button styling */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.theme-toggle button {
+  background-color: #fff;
+  color: #1a1a1a;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .theme-toggle button {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #007acc;
+}
+
+/* hover background */
+.theme-toggle button:hover {
+  background-color: #f0f0f0;
+}
+
+/* dark mode hover */
+.dark-mode .theme-toggle button:hover {
+  background-color: #333;
+}
+
+/* heading styling */
+h1 {
+  font-size: 3.5em;
+  line-height: 1.2;
+  /* light mode heading colour */
+  color: #333;
+}
+
+/* dark mode heading */
+.dark-mode h1 {
+  color: #f4f4f4;
+}
+
+/* button styling */
+button {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0.5em 1.5em;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: inherit;
+  /* light mode background */
+  background-color: #ffffff;
+  /* light mode text */
+  color: #333;
+  /* transition for background and border */
+  transition: background-color 0.3s, border-color 0.3s;
+  /* full width */
+  width: 100%;
+}
+
+/* button hover styling */
+button:hover {
+  /* border colour */
+  border-color: #333;
+  /* background colour */
+  background-color: #e0e0e0;
+  /* change cursor */
+  cursor: pointer;
+}
+
+button:focus,
+button:focus-visible {
+  /* outline on focus */
+  outline: 4px auto #333;
+}
+
+/* dark mode button hover styling */
+.dark-mode button:hover {
+  border-color: #007acc;
+  background-color: #444;
+}

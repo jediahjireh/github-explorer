@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png"
+    href="https://assets-global.website-files.com/61d1b6e84887f53fef1dcdf2/631b45e07d98cfb364e5951f_github-white.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- import stylesheets -->
+  <link rel="stylesheet" href="/styles/index.css" />
+  <link rel="stylesheet" href="/styles/custom.css" />
+  <!-- title of application -->
+  <title>GitHub Explorer</title>
+</head>
+
+<body>
+  <!-- button for toggling dark or light mode -->
+  <div class="theme-toggle">
+    <button onclick="toggleMode()">☀︎</button>
+  </div>
+
+  <!-- main content area for React app -->
+  <div id="root"></div>
+
+  <!-- import the main file for the application -->
+  <script type="module" src="/src/main.jsx"></script>
+
+  <script>
+    // function to toggle dark mode on and off
+    function toggleMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+      localStorage.setItem("isDarkMode", element.classList.contains("dark-mode"));
+    }
+
+    // check local storage to apply dark mode if previously set
+    if (localStorage.getItem("isDarkMode") === "true") {
+      document.body.classList.add("dark-mode");
+    }
+  </script>
+</body>
+
+</html>
