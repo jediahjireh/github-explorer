@@ -10,6 +10,7 @@ GitHub Explorer is a full-stack web application that allows users to search for 
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
+- [Credits](#credits)
 
 ## Project Structure
 
@@ -119,3 +120,10 @@ View attached screenshots of the project in action.
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request.
+
+## Credits
+
+Project created by: [Jediah Jireh Naicker](https://github.com/jediahjireh)
+
+Feel free to reach out to me at [jediahnaicker@gmail.com](mailto:jediahnaicker@gmail.com) for inquiries.
+Happy coding!
